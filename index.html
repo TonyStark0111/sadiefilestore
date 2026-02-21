@@ -6,7 +6,7 @@
   <title>FileFlix • Secure Redirect</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* === UPDATED STYLES – BORDERS REMOVED === */
+    /* === FULLY BORDERLESS – NO VISUAL BOUNDARIES === */
     * {
       margin: 0;
       padding: 0;
@@ -37,11 +37,10 @@
       background: rgba(20, 24, 36, 0.85);
       backdrop-filter: blur(15px);
       -webkit-backdrop-filter: blur(15px);
-      /* border removed – main boundary eliminated */
-      border: none;
+      border: none;                /* No border */
       border-radius: 2.5rem;
       padding: 2.5rem 2rem;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+      box-shadow: none;             /* No shadow – eliminates any edge illusion */
       text-align: center;
       transition: transform 0.2s ease;
       position: relative;
@@ -87,8 +86,7 @@
       border-radius: 2rem;
       padding: 1.8rem 1.5rem;
       margin: 2rem 0 1.5rem;
-      /* left border removed – no more boundary */
-      border-left: none;
+      border-left: none;            /* Removed accent border */
     }
     .countdown-label {
       font-size: 1rem;
@@ -121,7 +119,7 @@
       border: none;
       cursor: pointer;
       transition: background 0.2s, transform 0.1s;
-      box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3);
+      box-shadow: 0 8px 20px rgba(229, 9, 20, 0.3); /* button shadow kept for depth */
     }
     .btn-primary:hover {
       background: #f82a34;
@@ -133,7 +131,7 @@
       padding: 0.75rem 1.2rem;
       font-size: 0.9rem;
       color: #7f87a5;
-      border: 1px solid rgba(255,255,255,0.03);
+      border: none;                 /* Removed tiny border */
       margin: 1rem 0 0.2rem;
     }
     .footer-note {
@@ -146,7 +144,7 @@
       background: rgba(229, 9, 20, 0.1);
       border-radius: 2rem;
       padding: 2rem;
-      border: 1px solid rgba(229, 9, 20, 0.2);
+      border: 1px solid rgba(229, 9, 20, 0.2); /* error border kept for clarity */
     }
     .error-message h3 {
       color: #fff;
